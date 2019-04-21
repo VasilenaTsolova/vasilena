@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Please select fill the form</h1>
+    <h2>Creating new article</h2>
+
+    <form action="serverSimulation.html" method="GET">
+        <div>
+            <label>Article by:</label>
+            <input type="text" name="articleCreator" />
+        </div>
+        </br>
+        <div>
+            <label>Article title:</label>
+            <input type="text" name="articleTitle" />
+        </div>
+        </br>
+        <div>
+            <label for="picturePicker">Select picture:</label>
+            <input id="picturePicker" type="file" name="mainPicture" accept="image/*" />
+        </div>
+        </br>
+        <div>
+            <label>Article body</label>
+            <textarea name="articleBody"></textarea>    
+        </div>
+        </br>
+        <div>
+            <label>Iamage position:</label>
+            <div>
+                <label for="imagePositionLeft">Left</label>
+                <input id="imagePositionLeft" type="radio" name="imagePosition" value="left" checked/>
+                </br>
+                <label for="imagePositionRight">Right</label>
+                <input id="imagePositionRight" type="radio" name="imagePosition" value="right"/>
+            </div>    
+        </div>
+        </br>
+        <div>
+            <label for="hasDateCheckbox">Show date</label>
+            <input id="hasDateCheckbox" type="checkbox" name="hasDate"/>
+        </div>
+        <div>
+            <label for="useTwoColumnsCheckbox">Use tow columns:</label>
+            <input id="useTwoColumnsCheckbox" type="checkbox" name="useTwoColumns"/>
+        </div>
+        
+        </br>
+
+        <input type="submit"/>    
+    </form>
+</body>
+</html>
